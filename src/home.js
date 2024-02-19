@@ -1,4 +1,4 @@
-import { auth } from '../../src/firebase-config.js'
+import { auth } from './firebase-config.js'
 
 const logout = document.getElementById("logout")
 const enviarEmail = document.getElementById("enviarEmail")
@@ -6,7 +6,7 @@ const abrirModal = document.getElementById("abrirModal")
 
 logout.addEventListener('click', () => {
     auth.signOut().then(() => {
-        window.location.href="../login/index.html"
+        window.location.href="../index.html"
     }).catch(() => {
         alert('Erro ao fazer LogOut')
     })

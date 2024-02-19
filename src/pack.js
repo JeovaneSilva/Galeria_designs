@@ -1,11 +1,11 @@
-import {database, storage, auth } from '../../src/firebase-config.js'
+import {database, storage, auth } from './firebase-config.js'
 
 
 
 const voltar = document.getElementById("voltar")
 
 voltar.addEventListener('click', () => {
-    window.location.href="admin.html"
+    window.location.href="../public/admin.html"
 })
 
 

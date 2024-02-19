@@ -1,4 +1,4 @@
-import { auth } from '../../src/firebase-config.js';
+import { auth } from './firebase-config.js';
 
 
 const form = {
@@ -15,9 +15,9 @@ const form = {
 auth.onAuthStateChanged((user) => {
     if (user) {
         if (user.uid == "UQ45sWhvISX7MQeXundMEVMOcSf1") {
-            window.location.href="../userAdmin/admin.html"
+            window.location.href="../public/admin.html"
         } else {
-            window.location.href="../users/home.html"
+            window.location.href="../public/home.html"
         }
     } else {
       alert('Usuário não logado');
@@ -42,10 +42,10 @@ form.loginButton().addEventListener('click', () => {
     ).then(() => {
         if(form.email().value == "jeanlimadasilva392@gmail.com" && form.password().value == "admin123"){
             hideLoading();
-            window.location.href = "../userAdmin/admin.html";
+            window.location.href = "../public/admin.html";
         } else{
             hideLoading();
-            window.location.href = "../users/home.html";
+            window.location.href = "../public/home.html";
         }
        
     }).catch(error => {
@@ -55,7 +55,7 @@ form.loginButton().addEventListener('click', () => {
 })
 
 form.registerButton().addEventListener('click', () => {
-    window.location.href = "../cadastro/registrar.html";
+    window.location.href = "../public/registrar.html";
 })
 
 form.recoverPasswordButton().addEventListener('click', () => {

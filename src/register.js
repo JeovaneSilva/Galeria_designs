@@ -1,4 +1,4 @@
-import { auth } from '../../src/firebase-config.js'
+import { auth } from './firebase-config.js'
 
 const form = {
     confirmPassword: () => document.getElementById('confirmPassword'),
@@ -17,9 +17,9 @@ const form = {
 auth.onAuthStateChanged((user) => {
     if (user) {
         if (user.uid == "UQ45sWhvISX7MQeXundMEVMOcSf1") {
-            window.location.href="../userAdmin/admin.html"
+            window.location.href="../public/admin.html"
         } else {
-            window.location.href="../users/home.html"
+            window.location.href="../public/home.html"
         }
     } else {
       alert('Usuário não logado');
@@ -60,7 +60,7 @@ form.registerButton().addEventListener('click', () => {
         email, password
     ).then(() => {
         hideLoading();
-        window.location.href = "../users/home.html";
+        window.location.href = "../public/home.html";
     }).catch(error => {
         hideLoading();
         alert(getErrorMessage(error));
@@ -107,6 +107,6 @@ function isFormValid() {
 }
 
 form.loginButton().addEventListener('click', () => {
-    window.location.href="../login/index.html"
+    window.location.href="../index.html"
 })
 
