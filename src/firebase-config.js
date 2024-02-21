@@ -1,12 +1,12 @@
 
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTHDOMAIN,
-  databaseURL: process.env.DATABASE_URL,
-  projectId: process.env.PROJECT_ID,
-  storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  appId: process.env.APP_ID
+  apiKey: "AIzaSyC5E8XYNymJJbP9qvYBBobZyKvumqZkd2Y",
+  authDomain: "jean-designs.firebaseapp.com",
+  databaseURL: "https://jean-designs-default-rtdb.firebaseio.com",
+  projectId: "jean-designs",
+  storageBucket: "jean-designs.appspot.com",
+  messagingSenderId: "605079963145",
+  appId: "1:605079963145:web:66f230d23c4476d15e5ad8"
 };
 
 const app = firebase.initializeApp(firebaseConfig);
