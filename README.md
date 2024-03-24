@@ -5,7 +5,7 @@
 Projeto de um site que armazena e exibe para os usuários os Designs produzidos pelo [jeandesigner_](https://www.instagram.com/jeandesigner__/), com o objetivo de aumentar o alcance do seu trabalho de uma maneira digital na web. 
 
 
--  [ ]  Projeto em Andamento
+-  [x]  Projeto em Andamento
 * Disponível em [JeanSilva](https://jeansilva.netlify.app/).
 * Hospedado no Netlify.
 * Login e Cadastro obrigatórios.
