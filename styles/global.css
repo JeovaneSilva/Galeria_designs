@@ -24,6 +24,7 @@ form {
     justify-content: center;
     align-items: center;
     border: 2px solid black;
+    box-shadow:-3px 5px 20px;;
 }
 
 img{
@@ -65,7 +66,7 @@ input{
     height: 100%;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-style: norma
+    font-style: normal;
 }
 
 .loading label {
